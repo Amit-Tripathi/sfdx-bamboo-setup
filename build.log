@@ -1,0 +1,42 @@
+
+C:\Users\sharm\Downloads\sfdx-bamboo-org-master>echo ON 
+
+C:\Users\sharm\Downloads\sfdx-bamboo-org-master>REM
+
+C:\Users\sharm\Downloads\sfdx-bamboo-org-master>REM Download Salesforce CLI and install it 
+
+C:\Users\sharm\Downloads\sfdx-bamboo-org-master>REM
+
+C:\Users\sharm\Downloads\sfdx-bamboo-org-master>REM Decrypt server key 
+
+C:\Users\sharm\Downloads\sfdx-bamboo-org-master>REM Set Path 
+
+C:\Users\sharm\Downloads\sfdx-bamboo-org-master>set PATH=C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Python27;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_161;C:\Program Files\sfdx\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Ruby25-x64\bin;C:\Users\sharm\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\sfdx\bin;C:\Program Files\Salesforce CLI\bin;C:\Users\sharm\Downloads\sfdx-bamboo-org-master\sfdx-cli-windows-x64\sfdx-cli-v7.12.3-bfc421fa08-windows-x64\bin 
+
+C:\Users\sharm\Downloads\sfdx-bamboo-org-master>REM Set up SFDX environment variables 
+
+C:\Users\sharm\Downloads\sfdx-bamboo-org-master>set SFDX_AUTOUPDATE_DISABLE=false 
+
+C:\Users\sharm\Downloads\sfdx-bamboo-org-master>set SFDX_USE_GENERIC_UNIX_KEYCHAIN=true 
+
+C:\Users\sharm\Downloads\sfdx-bamboo-org-master>set SFDX_DOMAIN_RETRY=300 
+
+C:\Users\sharm\Downloads\sfdx-bamboo-org-master>set SFDX_DISABLE_APP_HUB=true 
+
+C:\Users\sharm\Downloads\sfdx-bamboo-org-master>set SFDX_LOG_LEVEL=debug 
+
+C:\Users\sharm\Downloads\sfdx-bamboo-org-master>set DEPLOYDIR=src 
+
+C:\Users\sharm\Downloads\sfdx-bamboo-org-master>set TESTLEVEL=RunLocalTests 
+
+C:\Users\sharm\Downloads\sfdx-bamboo-org-master>REM Output CLI version and plug-in information 
+
+C:\Users\sharm\Downloads\sfdx-bamboo-org-master>REM
+
+C:\Users\sharm\Downloads\sfdx-bamboo-org-master>REM Deploy metadata to Salesforce 
+
+C:\Users\sharm\Downloads\sfdx-bamboo-org-master>REM
+
+C:\Users\sharm\Downloads\sfdx-bamboo-org-master>REM Authenticate to Salesforce using the server key 
+
+C:\Users\sharm\Downloads\sfdx-bamboo-org-master>sfdx force:auth:jwt:grant --instanceurl https://test.salesforce.com --clientid  --jwtkeyfile assets/server.key --username  --setalias UAT  
